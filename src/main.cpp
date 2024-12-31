@@ -1,39 +1,37 @@
-#include <iostream>
 #include "operations.h"
+#include <QApplication>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QLineEdit>
+#include <QWidget>
+#include <QString>
 
-int main() {
-    double num1, num2;
-    char operation;
+int main(int argc, char* argv[]) {
+    QApplication app(argc, argv);
 
-    std::cout << "Enter first number: ";
-    std::cin >> num1;
+    QWidget window;
+    QVBoxLayout layout;
 
-    std::cout << "Enter an operator (+, -, *, /): ";
-    std::cin >> operation;
+    QLineEdit input1, input2, result;
+    input1.setPlaceholderText("Enter first number");
+    input2.setPlaceholderText("Enter second number");
+    result.setReadOnly(true);
 
-    std::cout << "Enter second number: ";
-    std::cin >> num2;
+    QPushButton addButton("Add");
+    QObject::connect(&addButton, &QPushButton::clicked, [&]() {
+        double num1 = input1.text().toDouble();
+        double num2 = input2.text().toDouble();
+        result.setText(QString::number(add(num1, num2)));
+    });
 
-    try {
-        switch (operation) {
-        case '+':
-            std::cout << "Result: " << add(num1, num2) << "\n";
-            break;
-        case '-':
-            std::cout << "Result: " << subtract(num1, num2) << "\n";
-            break;
-        case '*':
-            std::cout << "Result: " << multiply(num1, num2) << "\n";
-            break;
-        case '/':
-            std::cout << "Result: " << divide(num1, num2) << "\n";
-            break;
-        default:
-            std::cout << "Invalid operator.\n";
-        }
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << "\n";
-    }
+    layout.addWidget(&input1);
+    layout.addWidget(&input2);
+    layout.addWidget(&addButton);
+    layout.addWidget(&result);
 
-    return 0;
+    window.setLayout(&layout);
+    window.show();
+
+    return app.exec();
 }
+
