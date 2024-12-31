@@ -15,7 +15,7 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 
 ---
 
-## **Core Concepts**
+### **Core Concepts**
 1. **Modularity**: Each operation is implemented in its own source file with corresponding declarations in the header file.
 2. **Encapsulation**: Arithmetic functions are encapsulated within their own implementation files.
 3. **Error Handling**: Division by zero is handled using exceptions.
@@ -32,8 +32,8 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 ### **Steps**
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd CalculatorProject
+   git clone https://github.com/darshan-kt/simple_calculator
+   cd simple_calculator
 
 2. Create a build directory and navigate to it:
    ```bash
@@ -66,8 +66,8 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 ## Future Enhancements
 
 -  Support for more operations (e.g., modulus, power, etc.).
--  Add a graphical interface.
+-  Add a graphical interface.  (Created a seperated branch )
 -  Add unit tests.
 
 ---
-This structure ensures modularity, adherence to C++ standards, and ease of understanding for developers. Follow these steps, and you’ll have a clean, professional calculator project!
+This structure ensures modularity, adherence to C++ standards, and ease of understanding for developers.
