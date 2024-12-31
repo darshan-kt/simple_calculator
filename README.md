@@ -40,9 +40,9 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
     mkdir build
     cd build
 
-3.  Run CMake to generate build files:
+3. Run CMake to generate build files:
    ```bash
-    cmake ..
+   cmake ..
 
 4. Compile the project:
    ```bash
@@ -51,6 +51,7 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 5. Run the calculator:
    ```bash
     ./calculator
+
 
 ---
 
@@ -71,3 +72,4 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 
 ---
 This structure ensures modularity, adherence to C++ standards, and ease of understanding for developers.
+
