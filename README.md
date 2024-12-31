@@ -51,6 +51,7 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 5. Run the calculator:
    ```bash
     ./calculator
+    ./calculator_qt             #For QT enabled program
 
 
 ---
@@ -67,8 +68,8 @@ A modular C++ project for a simple calculator that performs basic arithmetic ope
 ## Future Enhancements
 
 -  Support for more operations (e.g., modulus, power, etc.).
--  Add a graphical interface.  (Created a seperated branch )
--  Add unit tests.
+-  Add a graphical interface.  (Created a seperated branch - But GUI is working only for add operation currently)
+
 
 ---
 This structure ensures modularity, adherence to C++ standards, and ease of understanding for developers.

@@ -6,6 +6,8 @@
 #include <QWidget>
 #include <QString>
 
+
+//This example just only show QT GUi feature for add function, in future you can add remaing functions
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
 
