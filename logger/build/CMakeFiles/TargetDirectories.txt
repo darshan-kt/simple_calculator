@@ -1,0 +1,3 @@
+/home/darshan/simple_calculator/logger/build/CMakeFiles/log4cplus_demo.dir
+/home/darshan/simple_calculator/logger/build/CMakeFiles/edit_cache.dir
+/home/darshan/simple_calculator/logger/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/log4cplus_demo.dir/src/basic_logger.cpp.o -o log4cplus_demo  -llog4cplus -lpthread 
